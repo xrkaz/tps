@@ -1,0 +1,85 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<BaseHead title="About" />
+<body>
+  <div class="wrapper">
+    <Header />
+    <div class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-filter"></div>
+      <div class="hero-content">
+        <h1>The Philippine Simulacra</h1>
+        <a class="about-btn" href="#">About us</a>
+      </div>
+    </div>
+    <Footer />
+  </div>
+</body>
+</html>
+
+<style lang="stylus">
+  .about-btn
+    text-transform uppercase
+    text-decoration none
+    color black
+    background-color white
+    padding 16px 40px
+    font-size 12px
+    letter-spacing 2px
+    font-weight 500
+  .wrapper
+    position relative
+  body
+    margin 0
+    font-family 'Montserrat', sans-serif
+    font-size 14px
+  ul
+    margin 0
+    padding 0
+    list-style-type none
+  h1
+    text-transform uppercase
+    font-size 45px
+    color white
+    font-weight bold
+    text-align center
+  .hero
+    position relative
+  .hero-image
+    background-image url(https://i.imgur.com/nzWonkL.jpg)
+    background-position top center
+    background-size cover
+    background-attachment scroll
+    height 100vh
+    width auto
+  .hero-filter
+    background-color transparent
+    background-image radial-gradient(at center center,#153243 0%,#1a6c7a 100%)
+    opacity .5
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    max-width 100vw
+    max-height 100vh
+    box-sizing border-box
+  .hero-content
+    max-width 100vw
+    max-height 100vh
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+  </style>
