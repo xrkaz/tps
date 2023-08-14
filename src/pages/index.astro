@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Philippine Simulacra</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header-wrapper">
+        <div class="logo">
+          <a href="/tpspn"><img style="max-width: 100px;" src="https://i.imgur.com/ZOr4oZW.png" /></a>
+        </div>
+        <div class="header-nav">
+          <ul>
+            <li><a href="/tpspn">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-filter"></div>
+      <div class="hero-content">
+        <h1>The Philippine Simulacra</h1>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-nav-wrapper">
+        <div class="footer-nav-col">
+          <ul>
+            <li>tps</li>
+            <li>link1</li>
+            <li>link2</li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <ul>
+            <li>tps</li>
+            <li>link1</li>
+            <li>link2</li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <ul>
+            <li>tps</li>
+            <li>link1</li>
+            <li>link2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>© 2023 kaz.cx 🌸 A recreation of <a href="https://tpspn.com/" target="_blank" rel="noopener noreferrer">The Philippine Simulator's</a> website in <a href="https://astro.build" target="_blank" rel="noopener noreferrer">Astro</a></p>
+    </footer>
+  </div>
+</body>
+</html>
+
+<style lang="stylus">
+.wrapper
+  position relative
+header
+  padding 40px
+  background-color transparent
+  position absolute
+  top 0
+  left 0
+  width 100%
+  max-width 100vw
+  box-sizing border-box
+  z-index 1
+body
+  margin 0
+  font-family 'Montserrat', sans-serif
+  font-size 14px
+ul
+  margin 0
+  padding 0
+  list-style-type none
+footer
+  border-top 1px solid black
+  padding 10px
+  p
+    text-align center
+h1
+  text-transform uppercase
+  font-size 45px
+  color white
+  font-weight bold
+  text-align center
+.header-wrapper
+  display flex
+  justify-content space-around
+.header-nav
+  padding-top 10px
+.header-nav ul li
+  display inline
+  a
+    color white
+    font-size 16px
+    text-decoration none
+    padding 1em 1em
+.hero
+  position relative
+.hero-image
+  background-image url(https://i.imgur.com/nzWonkL.jpg)
+  background-position top center
+  background-size cover
+  background-attachment scroll
+  height 100vh
+  width auto
+.hero-filter
+  background-color transparent
+  background-image radial-gradient(at center center,#153243 0%,#1a6c7a 100%)
+  opacity .5
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  max-width 100vw
+  max-height 100vh
+  box-sizing border-box
+.hero-content
+  max-width 100vw
+  max-height 100vh
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+.footer-nav
+  padding 50px
+.footer-nav-wrapper
+  display flex
+  justify-content space-evenly
+  //gap 50px
+</style>
