@@ -2,6 +2,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  // site: 'https://xrkaz.github.io',
-  // base: '/tpspn',
+  site: 'https://xrkaz.github.io',
+  base: '/tps',
 });
