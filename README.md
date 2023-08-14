@@ -1,8 +1,8 @@
 # Astro-TPS
 
-A recreation of TPS's website in Astro.
+A recreation of [TPS's](https://tpspn.com) website in Astro. WIP.
 
-https://xrkaz.github.io/tpspn
+https://xrkaz.github.io/tps
 
 All commands are run from the root of the project, from a terminal:
 
