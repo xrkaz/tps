@@ -1,24 +1,37 @@
+---
+import { Facebook } from 'lucide-astro'
+import { Mail } from 'lucide-astro'
+---
+
+
 <div class="footer-nav">
   <div class="footer-nav-wrapper">
     <div class="footer-nav-col">
       <ul>
-        <li>tps</li>
-        <li>link1</li>
-        <li>link2</li>
+        <li><a href="/tps/"><img src="https://i.imgur.com/rJpb2PM.png" alt="tps-logo.png" /></a></li>
+        <li class="address">Republic of the Philippines</li>
+        <li>
+          <a href="https://www.facebook.com/phsimulatorpatchnotes" target="_blank"><Facebook/></a>
+          <a href="mailto:admin@tpspn.com"><Mail/></a>
+        </li>
       </ul>
     </div>
     <div class="footer-nav-col">
       <ul>
-        <li>tps</li>
-        <li>link1</li>
-        <li>link2</li>
+        <li class="heading">About Us</li>
+        <li><a href="#">link1</a></li>
+        <li><a href="#">link2</a></li>
+        <li><a href="#">link3</a></li>
+        <li><a href="#">link4</a></li>
       </ul>
     </div>
     <div class="footer-nav-col">
       <ul>
-        <li>tps</li>
-        <li>link1</li>
-        <li>link2</li>
+        <li class="heading">Connect</li>
+        <li><a href="#">link1</a></li>
+        <li><a href="#">link2</a></li>
+        <li><a href="#">link3</a></li>
+        <li><a href="#">link4</a></li>
       </ul>
     </div>
   </div>
@@ -33,6 +46,12 @@ footer
   padding 10px
   p
     text-align center
+.heading
+  font-size 19px
+  font-weight 400
+  margin-bottom 1em
+.address
+  margin 1em 0
 .footer-nav
   padding 50px
 .footer-nav-wrapper

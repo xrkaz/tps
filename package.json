@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "astro": "^2.10.7",
+    "lucide-astro": "^0.265.0",
     "stylus": "^0.59.0"
   }
 }

@@ -21,13 +21,15 @@ import Footer from "../components/Footer.astro";
       <div class="services-item">
         <div class="services-wrapper">
           <div class="services-block">
-            <h2>Service 1</h2>
-            <p>
-              A short description of your service.
-              Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
-            </p>
-            <div class="contact-btn"><a href="#">Contact</a></div>
+            <div class="services-content">
+              <h2>Service 1</h2>
+              <p>
+                A short description of your service.
+                Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
+              </p>
+              <div class="contact-btn"><a href="#">Contact</a></div>
+            </div>
           </div>
           <div class="services-block">
             <img src="https://i.imgur.com/zit7M58.jpg" alt="test.png" />
@@ -37,32 +39,36 @@ import Footer from "../components/Footer.astro";
       <div class="services-item">
         <div class="services-wrapper">
           <div class="services-block">
-            <img src="https://i.imgur.com/zit7M58.jpg" alt="test.png" />
+            <img src="https://i.imgur.com/MrWBpq7.jpg" alt="test.png" />
           </div>
           <div class="services-block">
-            <h2>Service 2</h2>
-            <p>
-              A short description of your service.
-              Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
-            </p>
-            <div class="contact-btn"><a href="#">Contact</a></div>
+            <div class="services-content-right">
+              <h2>Service 2</h2>
+              <p>
+                A short description of your service.
+                Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
+              </p>
+              <div class="contact-btn"><a href="#">Contact</a></div>
+            </div>
           </div>
         </div>
       </div>
       <div class="services-item">
         <div class="services-wrapper">
           <div class="services-block">
-            <h2>Service 3</h2>
-            <p>
-              A short description of your service.
-              Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
-            </p>
-            <div class="contact-btn"><a href="#">Contact</a></div>
+            <div class="services-content">
+              <h2>Service 3</h2>
+              <p>
+                A short description of your service.
+                Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
+              </p>
+              <div class="contact-btn"><a href="#">Contact</a></div>
+            </div>
           </div>
           <div class="services-block">
-            <img src="https://i.imgur.com/zit7M58.jpg" alt="test.png" />
+            <img src="https://i.imgur.com/Q7RdduG.jpg" alt="test.png" />
           </div>
         </div>
       </div>
@@ -179,4 +185,8 @@ img
   border 2px solid #1a6c7a
   text-decoration none
   color #1a6c7a
+.services-content
+  padding-right 50px
+.services-content-right
+  padding-left 50px
 </style>
