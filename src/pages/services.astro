@@ -28,7 +28,7 @@ import Footer from "../components/Footer.astro";
                 Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
               </p>
-              <div class="contact-btn"><a href="#">Contact</a></div>
+              <div class="contact-btn"><a href="/tps/contact/">Contact</a></div>
             </div>
           </div>
           <div class="services-block">
@@ -49,7 +49,7 @@ import Footer from "../components/Footer.astro";
                 Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
               </p>
-              <div class="contact-btn"><a href="#">Contact</a></div>
+              <div class="contact-btn"><a href="/tps/contact/">Contact</a></div>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ import Footer from "../components/Footer.astro";
                 Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
               </p>
-              <div class="contact-btn"><a href="#">Contact</a></div>
+              <div class="contact-btn"><a href="/tps/contact/">Contact</a></div>
             </div>
           </div>
           <div class="services-block">
@@ -76,7 +76,7 @@ import Footer from "../components/Footer.astro";
     <div class="faq">
       <div class="faq-content">
         <h2>F.A.Q.</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p class="faq-subtext">Lorem ipsum dolor sit amet.</p>
         <details>
           <summary>Lorem ipsum dolor sit amet?</summary>
           <p>Lorem ipsum dolor sit amet.</p>
@@ -111,6 +111,9 @@ body
   margin 0
   font-family 'Montserrat', sans-serif
   font-size 14px
+p
+  margin 0
+  font-size 16px
 ul
   margin 0
   padding 0
@@ -121,10 +124,30 @@ h1
   color white
   font-weight 600
   text-align center
+h2
+  font-size 28px
+  font-weight 600
+  margin 0 0 20px 0
 img
   width 100%
   max-width 100%
   height auto
+details
+  background-color white
+  padding 25px
+  text-align left
+  margin-bottom 3px
+  position relative
+  p
+    font-size 14px
+details summary
+  transition margin 150ms ease-out
+  color #1a6c7a
+  font-weight 700
+  font-size 16px
+  cursor pointer
+details[open] summary
+  margin-bottom 25px
 .hero
   position relative
 .hero-image
@@ -154,7 +177,7 @@ img
   align-items center
   justify-content center
   position absolute
-  top 0
+  top 50px
   left 0
   width 100%
   height 100%
@@ -172,11 +195,19 @@ img
   max-width 1140px
 .services-block
   width 50%
+  display flex
+  position relative
 .faq
   padding 100px
   background-color #f3f9fb
+.faq-subtext
+  margin-bottom 40px
 .faq-content
   text-align center
+  width 45rem
+  margin auto
+.contact-btn
+  margin-top 50px
 .contact-btn a
   padding 16px 40px
   text-transform uppercase
@@ -185,8 +216,18 @@ img
   border 2px solid #1a6c7a
   text-decoration none
   color #1a6c7a
+  transition all .3s
+  &:hover
+    color white
+    background-color #153243
 .services-content
   padding-right 50px
+  display flex
+  flex-wrap wrap
+  align-content center
 .services-content-right
   padding-left 50px
+  display flex
+  flex-wrap wrap
+  align-content center
 </style>
