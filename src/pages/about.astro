@@ -27,7 +27,7 @@ import Footer from "../components/Footer.astro";
             Tell people about what you, your expertise and experience.
             Think about what you would want to see on this page if you were looking at an about page.
             This is your chance to tell about how you are qualified to serve them.
-          </h4>
+          </h3>
           <p>
             Nulla hendrerit metus et tincidunt tristique.
             Fusce molestie commodo mauris, vitae vestibulum tortor venenatis non.
@@ -44,9 +44,28 @@ import Footer from "../components/Footer.astro";
     </div>
     <div class="about-2">
       <div class="about-2-wrapper">
-        <div class="about-2-block"></div>
-        <div class="about-2-block"></div>
-        <div class="about-2-block"></div>
+        <div class="about-2-block">
+          <h2>Mission</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+        <div class="about-2-block">
+          <h2>Vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+        <div class="about-2-block">
+          <h2>Values</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+        </div>
       </div>
     </div>
     <Footer />
@@ -55,52 +74,72 @@ import Footer from "../components/Footer.astro";
 </html>
 
 <style lang="stylus">
-  .wrapper
-    position relative
-  body
-    margin 0
-    font-family 'Montserrat', sans-serif
-    font-size 14px
-  ul
-    margin 0
-    padding 0
-    list-style-type none
-  h1
-    font-size 45px
-    color white
-    font-weight bold
-    text-align center
-  .hero
-    position relative
-  .hero-image
-    background-image url(https://i.imgur.com/DSORvKq.jpg)
-    background-position bottom center
-    background-size cover
-    background-attachment fixed
-    height 100vh
-    width auto
-  .hero-filter
-    background-color transparent
-    background-image radial-gradient(at center center,#153243 0%,#1a6c7a 100%)
-    opacity .5
-    position absolute
-    top 0
-    left 0
-    width 100%
-    height 100%
-    max-width 100vw
-    max-height 100vh
-    box-sizing border-box
-  .hero-content
-    max-width 100vw
-    max-height 100vh
-    display flex
-    flex-direction column
-    align-items center
-    justify-content center
-    position absolute
-    top 0
-    left 0
-    width 100%
-    height 100%
-  </style>
+.wrapper
+  position relative
+body
+  margin 0
+  font-family 'Montserrat', sans-serif
+  font-size 14px
+ul
+  margin 0
+  padding 0
+  list-style-type none
+h1
+  font-size 50px
+  letter-spacing 2.5px
+  color white
+  font-weight 600
+  text-align center
+.hero
+  position relative
+.hero-image
+  background-image url(https://i.imgur.com/DSORvKq.jpg)
+  background-position bottom center
+  background-size cover
+  background-attachment fixed
+  height 40vh
+  width auto
+.hero-filter
+  background-color transparent
+  background-image linear-gradient(180deg, #153243 0%, #1a6c7a 100%)
+  opacity .6
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  max-width 100vw
+  max-height 100vh
+  box-sizing border-box
+.hero-content
+  max-width 100vw
+  max-height 100vh
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+.about-1
+  padding 100px 0 100px 0
+.about-1-wrapper
+  display flex
+  margin-left auto
+  margin-right auto
+  position relative
+  max-width 1140px
+.about-1-block
+  width 50%
+.about-2
+  padding 70px 0 70px 0
+  background-color #f3f9fb
+.about-2-wrapper
+  display flex
+  margin-left auto
+  margin-right auto
+  position relative
+  max-width 1140px
+</style>

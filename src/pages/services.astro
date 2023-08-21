@@ -1,0 +1,182 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<BaseHead title="Services" />
+<body>
+  <div class="wrapper">
+    <Header />
+    <div class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-filter"></div>
+      <div class="hero-content">
+        <h1>Services</h1>
+      </div>
+    </div>
+    <div class="services">
+      <div class="services-item">
+        <div class="services-wrapper">
+          <div class="services-block">
+            <h2>Service 1</h2>
+            <p>
+              A short description of your service.
+              Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
+            </p>
+            <div class="contact-btn"><a href="#">Contact</a></div>
+          </div>
+          <div class="services-block">
+            <img src="https://i.imgur.com/zit7M58.jpg" alt="test.png" />
+          </div>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-wrapper">
+          <div class="services-block">
+            <img src="https://i.imgur.com/zit7M58.jpg" alt="test.png" />
+          </div>
+          <div class="services-block">
+            <h2>Service 2</h2>
+            <p>
+              A short description of your service.
+              Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
+            </p>
+            <div class="contact-btn"><a href="#">Contact</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-wrapper">
+          <div class="services-block">
+            <h2>Service 3</h2>
+            <p>
+              A short description of your service.
+              Lorem ipsm dolor amet, consec tetur adipis cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exer citation ullamco la enim lorem isae ni.
+            </p>
+            <div class="contact-btn"><a href="#">Contact</a></div>
+          </div>
+          <div class="services-block">
+            <img src="https://i.imgur.com/zit7M58.jpg" alt="test.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-content">
+        <h2>F.A.Q.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <details>
+          <summary>Lorem ipsum dolor sit amet?</summary>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </details>
+        <details>
+          <summary>Lorem ipsum dolor sit amet?</summary>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </details>
+        <details>
+          <summary>Lorem ipsum dolor sit amet?</summary>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </details>
+        <details>
+          <summary>Lorem ipsum dolor sit amet?</summary>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </details>
+        <details>
+          <summary>Lorem ipsum dolor sit amet?</summary>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </details>
+      </div>
+    </div>
+    <Footer />
+  </div>
+</body>
+</html>
+
+<style lang="stylus">
+.wrapper
+  position relative
+body
+  margin 0
+  font-family 'Montserrat', sans-serif
+  font-size 14px
+ul
+  margin 0
+  padding 0
+  list-style-type none
+h1
+  font-size 50px
+  letter-spacing 2.5px
+  color white
+  font-weight 600
+  text-align center
+img
+  width 100%
+  max-width 100%
+  height auto
+.hero
+  position relative
+.hero-image
+  background-image url(https://i.imgur.com/DSORvKq.jpg)
+  background-position bottom center
+  background-size cover
+  background-attachment fixed
+  height 40vh
+  width auto
+.hero-filter
+  background-color transparent
+  background-image linear-gradient(180deg, #153243 0%, #1a6c7a 100%)
+  opacity .6
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  max-width 100vw
+  max-height 100vh
+  box-sizing border-box
+.hero-content
+  max-width 100vw
+  max-height 100vh
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+.services
+  padding 100px 0 100px 0
+.services-item
+  padding 100px 0
+.services-item:first-child, .services-item:last-child
+  padding 0
+.services-wrapper
+  display flex
+  margin-left auto
+  margin-right auto
+  position relative
+  max-width 1140px
+.services-block
+  width 50%
+.faq
+  padding 100px
+  background-color #f3f9fb
+.faq-content
+  text-align center
+.contact-btn a
+  padding 16px 40px
+  text-transform uppercase
+  letter-spacing 2px
+  font-weight 500
+  border 2px solid #1a6c7a
+  text-decoration none
+  color #1a6c7a
+</style>
