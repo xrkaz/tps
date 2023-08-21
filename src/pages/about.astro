@@ -14,8 +14,39 @@ import Footer from "../components/Footer.astro";
       <div class="hero-image"></div>
       <div class="hero-filter"></div>
       <div class="hero-content">
-        <h1>The Philippine Simulacra</h1>
-        <a class="about-btn" href="#">About us</a>
+        <h1>About</h1>
+      </div>
+    </div>
+    <div class="about-1">
+      <div class="about-1-wrapper">
+        <div class="about-1-block">
+          <h2>Established in 1992</h2>
+        </div>
+        <div class="about-1-block">
+          <h3>
+            Tell people about what you, your expertise and experience.
+            Think about what you would want to see on this page if you were looking at an about page.
+            This is your chance to tell about how you are qualified to serve them.
+          </h4>
+          <p>
+            Nulla hendrerit metus et tincidunt tristique.
+            Fusce molestie commodo mauris, vitae vestibulum tortor venenatis non.
+            Pellentesque quis urna a magna bibendum volutpat a at nisl.
+            Suspendisse finibus, tortor id gravida feugiat, nulla leo venenatis nisi, et aliquam quam ligula eget dui.
+            Suspendisse lectus lorem, varius vel dapibus a, vestibulum a eros. Sed sed magna in neque commodo pretium.
+          </p>
+          <p>
+            We look forward to your stay.
+          </p>
+          <p class="owner">John & Steven</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-2">
+      <div class="about-2-wrapper">
+        <div class="about-2-block"></div>
+        <div class="about-2-block"></div>
+        <div class="about-2-block"></div>
       </div>
     </div>
     <Footer />
@@ -24,15 +55,6 @@ import Footer from "../components/Footer.astro";
 </html>
 
 <style lang="stylus">
-  .about-btn
-    text-transform uppercase
-    text-decoration none
-    color black
-    background-color white
-    padding 16px 40px
-    font-size 12px
-    letter-spacing 2px
-    font-weight 500
   .wrapper
     position relative
   body
@@ -44,7 +66,6 @@ import Footer from "../components/Footer.astro";
     padding 0
     list-style-type none
   h1
-    text-transform uppercase
     font-size 45px
     color white
     font-weight bold
@@ -52,10 +73,10 @@ import Footer from "../components/Footer.astro";
   .hero
     position relative
   .hero-image
-    background-image url(https://i.imgur.com/nzWonkL.jpg)
-    background-position top center
+    background-image url(https://i.imgur.com/DSORvKq.jpg)
+    background-position bottom center
     background-size cover
-    background-attachment scroll
+    background-attachment fixed
     height 100vh
     width auto
   .hero-filter
